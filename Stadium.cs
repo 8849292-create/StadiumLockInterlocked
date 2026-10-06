@@ -111,34 +111,6 @@ namespace StadiumLockInterlocked
             }            
             Interlocked.Add(ref expectedInside, localInside);
             Interlocked.Add(ref expectedTotalEntered, localEntered);
-
-
-
-
-            //long localInside = 0;
-            //long localEntered = 0;
-
-            //var rdn = new Random(seed); 
-            //for (int i = 0; i < events; i++)
-            //{
-            //    var (dInside, dEntered) = GenerateEvent(rdn);
-
-            //    if (dInside > 0)
-            //    {                    
-            //        Interlocked.Add(ref insideAtomic, dInside);
-            //        Interlocked.Add(ref totalEnteredAtomic, dEntered);
-            //    }
-            //    else
-            //    {                    
-            //        Interlocked.Decrement(ref insideAtomic);
-            //    }
-
-            //    localInside += dInside;
-            //    localEntered += dEntered;
-            //}
-
-            //Interlocked.Add(ref expectedInside, localInside);
-            //Interlocked.Add(ref expectedTotalEntered, localEntered);
         }
 
     }
